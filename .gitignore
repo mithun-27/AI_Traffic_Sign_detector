@@ -21,3 +21,4 @@ models/*.onnx
 models/*.tflite
 logs/
 data/
+runs/

@@ -1,8 +1,17 @@
+# detection
+torch>=2.0
+torchvision>=0.15
+opencv-python
+# Ultralytics YOLOv5 will be loaded via torch.hub at runtime
+
+# classifier (optional)
 tensorflow>=2.15.0
 numpy
 pillow
-opencv-python
 scikit-learn
-matplotlib
+
+# UI
 streamlit
+
+# dataset helper if you use the previous prepare_data script
 datasets
