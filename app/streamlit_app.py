@@ -7,6 +7,9 @@ from PIL import Image
 import cv2
 import tensorflow as tf
 import torch
+import pathlib
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
 
 from src.utils import pil_to_np, largest_circle_crop, center_square, enhance_digits
 
@@ -15,7 +18,7 @@ st.title("Traffic Sign Detection (YOLOv5) + Classifier")
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 MODELS_DIR = PROJECT_ROOT / "models"
-YOLO_WEIGHTS = MODELS_DIR / "yolov5_best.pt"
+YOLO_WEIGHTS = MODELS_DIR / "best.pt"
 
 # load YOLO (cached)
 @st.cache_resource

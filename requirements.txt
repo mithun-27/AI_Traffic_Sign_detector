@@ -15,3 +15,4 @@ streamlit
 
 # dataset helper if you use the previous prepare_data script
 datasets
+seaborn
